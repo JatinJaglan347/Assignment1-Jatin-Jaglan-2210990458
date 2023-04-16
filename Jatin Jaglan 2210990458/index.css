@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'segoe ui';
+  }
+  
+  .nav {
+    height: 50px;
+    width: 100%;
+    background-color: #b8b7b9;
+    position: relative;
+  }
+
+
+  
+  .nav > .nav-header {
+    display: inline;
+  
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: black;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid black;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #b8b7b9;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+  .page1 {
+   
+    background-color:  #F8F8F8;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;  
+    text-align: center;
+  }
+  .page1-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    text-align: center;
+}
+.left-content   {
+    margin: 50px;
+    text-align: start;
+    margin-right: 50px;
+    font-size: 1vw;
+}
+
+.right-content{
+    margin: 50px;
+    margin-left: 50px;
+    border-radius: 20px;
+}
+
+img{
+    border-radius: 20px;
+    height: 80vh;
+    width: 60vw;  
+    
+
+}
+.page2{
+    height: 70vh;
+    padding-top: 10vh;
+    padding-bottom: 30vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+table {
+    margin-top: 0;
+    color: #333;
+    margin: 0 auto;
+    text-align: center;
+  }
+  td {
+    vertical-align: middle;
+  }
+
+
+
+
+  .box {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: auto;
+    max-width: 600px;
+    border-radius: 15px;
+  }
+
+  ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+  }
+  li {
+    font-size: 1vw;
+    line-height: 2vw;
+  }
+
+
+
+.page4{
+    margin-top: 15vh;
+}
+
+  form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="number"], input[type="email"], input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+h1 {
+    text-align: center;
+}
+label[for="male"], label[for="female"] {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+
+
